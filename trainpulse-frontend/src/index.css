@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap');
+
+:root {
+  --primary-navy: #0f172a;
+  --primary-blue: #1e40af;
+  --accent-blue: #2563eb;
+  --accent-blue-hover: #1d4ed8;
+  
+  --bg-main: #f8fafc;
+  --bg-surface: #ffffff;
+  --bg-card: #ffffff;
+  --bg-sidebar: #0f172a;
+  --bg-header: #ffffff;
+  
+  --text-main: #1e293b;
+  --text-muted: #64748b;
+  --text-heading: #0f172a;
+  --text-inverse: #ffffff;
+  
+  --border-color: #e2e8f0;
+  --border-focus: #93c5fd;
+  
+  /* Status Colors */
+  --status-ontime-bg: #dcfce7;
+  --status-ontime-text: #15803d;
+  --status-ontime-border: #86efac;
+  
+  --status-delayed-bg: #fee2e2;
+  --status-delayed-text: #b91c1c;
+  --status-delayed-border: #fca5a5;
+  
+  --status-running-bg: #fef3c7;
+  --status-running-text: #b45309;
+  --status-running-border: #fde68a;
+  
+  --status-scheduled-bg: #dbeafe;
+  --status-scheduled-text: #1d4ed8;
+  --status-scheduled-border: #93c5fd;
+
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -1px rgba(0, 0, 0, 0.04);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-xl: 12px;
+
+  --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--text-main);
+  background-color: var(--bg-main);
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+[data-theme="dark"] {
+  --bg-main: #0b0f17;
+  --bg-surface: #111827;
+  --bg-card: #1f2937;
+  --bg-header: #111827;
+  
+  --text-main: #f3f4f6;
+  --text-muted: #9ca3af;
+  --text-heading: #ffffff;
+  
+  --border-color: #374151;
+  --border-focus: #3b82f6;
+
+  --status-ontime-bg: rgba(22, 101, 52, 0.25);
+  --status-ontime-text: #4ade80;
+  --status-ontime-border: rgba(34, 197, 94, 0.4);
+
+  --status-delayed-bg: rgba(153, 27, 27, 0.25);
+  --status-delayed-text: #f87171;
+  --status-delayed-border: rgba(239, 68, 68, 0.4);
+
+  --status-running-bg: rgba(146, 64, 14, 0.25);
+  --status-running-text: #fbbf24;
+  --status-running-border: rgba(245, 158, 11, 0.4);
+
+  --status-scheduled-bg: rgba(30, 64, 175, 0.25);
+  --status-scheduled-text: #60a5fa;
+  --status-scheduled-border: rgba(59, 130, 246, 0.4);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: var(--accent-blue);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+}

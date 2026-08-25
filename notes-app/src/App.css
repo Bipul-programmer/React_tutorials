@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f5f7fb;
+  color: #1f2937;
+}
+
+.app {
+  width: 90%;
+  max-width: 1000px;
+  margin: 50px auto;
+}
+
+.app h1 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 35px;
+}
+
+
+/* =====================
+   Note Form
+===================== */
+
+.note-form {
+  width: 600px;
+  max-width: 100%;
+  margin: 0 auto 40px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.note-form input,
+.note-form textarea {
+  width: 100%;
+
+  padding: 14px 16px;
+
+  border: 2px solid #e5e7eb;
+  border-radius: 10px;
+
+  font-size: 16px;
+  font-family: inherit;
+
+  outline: none;
+}
+
+.note-form textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.note-form input:focus,
+.note-form textarea:focus {
+  border-color: #6366f1;
+
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.12);
+}
+
+.note-form button {
+  padding: 14px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: #6366f1;
+  color: white;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.note-form button:hover {
+  background: #4f46e5;
+}
+
+
+/* =====================
+   Notes Container
+===================== */
+
+.notes-container {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fill, minmax(280px, 1fr));
+
+  gap: 20px;
+}
+
+
+/* =====================
+   Note Card
+===================== */
+
+.note-card {
+  background: white;
+
+  padding: 22px;
+
+  border-radius: 15px;
+
+  border: 1px solid #e5e7eb;
+
+  box-shadow:
+    0 5px 15px rgba(0, 0, 0, 0.05);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.note-card:hover {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.note-card h2 {
+  margin-bottom: 12px;
+
+  font-size: 21px;
+
+  color: #111827;
+}
+
+.note-card p {
+  color: #6b7280;
+
+  line-height: 1.6;
+
+  white-space: pre-wrap;
+  margin-bottom: 16px;
+}
+
+.note-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.delete-button {
+  padding: 6px 14px;
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.delete-button:hover {
+  background-color: #dc2626;
+}
+
+.empty-notes {
+  text-align: center;
+  color: #9ca3af;
+  font-size: 18px;
+  margin-top: 40px;
+}
