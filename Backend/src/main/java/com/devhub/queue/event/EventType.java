@@ -1,0 +1,16 @@
+package com.devhub.queue.event;
+
+public enum EventType {
+    USER_REGISTERED,
+    COURSE_ENROLLED,
+    LESSON_COMPLETED,
+    NOTIFICATION_SEND,
+    USER_UPDATED,
+    USER_DELETED,
+    POST_CREATED,
+    POST_UPDATED,
+    POST_DELETED,
+    COMMENT_CREATED,
+    COMMENT_UPDATED,
+    COMMENT_DELETED,
+}
